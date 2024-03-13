@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --gradient1: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --gradiant1-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --gradient2: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    --gradient2-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --gradiantBG: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+    --darkRosa: #F74780;
+    --rosa: #FFA7C3;
+    --blanco: #FFFFFF;
+    --darkAzul: #13183F;
+    --azulVioleta: #666CA3;
+    --gris: #83869A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.section1{
+    height: 900px; 
+}
+.nav-bar {
+    display: flex;
+    width: 1109.208px;
+    
+    margin-top: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo-nav{
+    width: 111.168px;
+    height: 27.684px;
+}
+.btn-nav {
+    width: 167px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: var(--darkAzul);
+    border: none;
+
+    color: var(--blanco);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+.btn-nav:active {
+    background-color: var(--azulVioleta);
+}
+.principal-body{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.content-1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 172px;
+    width: 457px;
+}
+.c1-title{
+    color: var(--darkAzul, #13183F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Plus Jakarta Sans";
+    width: 457px;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.c1-content{
+    margin-top: 29px;
+    width: 445px;
+    color: var(--83869A, #83869A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+}
+.c1-btn{
+    width: 167px;
+    height: 63px;
+    border-radius: 31.5px;
+    border: none;
+    background: var(--gradient1);
+    color: var(--blanco, #FFF);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+.c1-btn:active{
+    background: var(--gradiant1-hover);
+}
+.content-2{
+    position: absolute;
+    top: -186.13px;
+    right: -425.63px;
+    width: 991.631px;
+    height: 936.917px;
+    z-index: -1;
+}
+.img-content-tablet{
+    display: none; 
+}
+.img-content-mobile{
+    display: none; 
+}
+.img-content-deskopt{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.section2{
+    height: 850px;
+    background: var(--gradiantBG);
+}
+.card-container{
+    height: 770px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 24px;
+}
+
+.card{
+    width: 350px;
+    height: 322px;
+    background-color: var(--blanco);
+    border-radius: 15px;
+}
+.card-secundario {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+}
+.icono-card{
+    width: 56px;
+    height: 56px;  
+    position: relative;
+    top: -24px;
+}
+.title-card {
+    color: var(--13183F, #13183F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 8px;
+}
+.content-card {
+    width: 286px;
+    color: var(--gris, #83869A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    margin-top: 24px;
+    height: 112px;
+}
+.btn-card{
+    color: var(--darkRosa, #F74780);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+.btn-card:active{
+    color: var(--rosa);
+}
+
+.card_principal {
+    background: var(--gradient1);
+}
+.title-card-principal{
+    color: var(--FFFFFF, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    width: 286px;
+    margin-top: 64px;
+    margin-left: 32px;
+}
+
+.section3{
+    height: 120px;
+    width: 100vw;
+    background-color: var(--darkAzul);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    width: 1109.208px;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.img-logo-footer {
+    width: 111.168px;
+    height: 27.684px;
+}
+.btn-footer{
+    width: 167px;
+    height: 56px;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    color: var(--FFFFFF, #FFF);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+.btn-footer:active{
+    background: var(--gradient2-hover);
+}
+
+@media (max-width: 768px) {
+    .section1{
+        height: 570px;
+    }
+    .nav-bar {
+        width: 689px;
+    }
+    .img-logo-nav{
+        width: 89px;
+        height: 26px;
+    }
+    .btn-nav {
+        width: 140px;
+        height: 48px;
+        font-size: 16px;
+    }
+    .content-1{
+        margin-top: 99px;
+        width: 398px;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .c1-title{
+        width: 326px;
+        font-size: 40px;
+    }
+    .c1-content{
+        margin-top: 0px;
+        width: 398px;
+        font-size: 16px;
+        line-height: 26px; 
+    }
+    .c1-btn{
+        height: 56px;
+        border: none;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 0px;
+    }
+    .content-2{
+        position: absolute;
+        top: -152.13px;
+        right: -297.71px;
+        width: 640.714px;
+        height: 640px;
+        z-index: -1;
+    }
+    .img-content-tablet{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .img-content-deskopt{
+        display: none;
+    }
+    .img-content-mobile{
+        display: none; 
+    }
+
+
+    .section2{
+        height: 999px;
+        width: 100vw;
+        background: var(--gradiantBG);
+        display: flex;
+        justify-content: center;
+    }
+    .card-container{
+        width: 689px;
+        height: 933px;
+        gap: 10px;
+    }
+    
+    .card{
+        width: 339px;
+        height: 259px;
+        border-radius: 10px;
+    }
+    .title-card {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .content-card {
+        font-size: 16px;
+        line-height: 26px; /* 155.556% */
+        margin-top: 16px;
+        height: 78px;
+    }
+    .title-card-principal{
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 56px;
+    }
+
+
+    .footer{
+        width: 689px;
+        height: 48px;
+    }
+    .img-logo-footer {
+        width: 89px;
+        height: 24px;
+    }
+    .btn-footer{
+        width: 140px;
+        height: 48px;
+        background: var(--gradient2);
+        font-size: 16px;
+    }
+    .btn-footer:active{
+        background: var(--gradient2-hover);
+    }
+}
+
+@media (max-width: 420px) {
+    .section1{
+        height: 770px;
+        width: 100vw; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar {
+        width: 343px;
+        display: flex;
+        margin-top: 16px;
+        justify-content: space-between;
+    }
+    .img-logo-nav{
+        width: 89px;
+        height: 23px;
+    }
+    .btn-nav {
+        width: 140px;
+        height: 48px;
+        font-size: 16px;
+    }
+    .principal-body{
+        display: flex;
+        flex-direction: column;
+        position:initial;
+        align-items: center;
+    }
+    .content-1{
+        margin-top: 38px;
+        width: 343px;
+        gap: 0;
+    }
+    .c1-title{
+        width: 343px;
+        font-size: 40px;
+    }
+    .c1-content{
+        margin-top: 26px;
+        width: 343px;
+        font-size: 16px;
+        line-height: 26px; /* 155.556% */
+    }
+    .c1-btn{
+        width: 167px;
+        height: 56px;
+        font-size: 16px; 
+        margin-top: 24px;
+    }
+    .content-2{
+        width: 357px;
+        height: 331px;
+        position: initial;
+        margin-top: 46px;
+    }
+    .img-content-tablet{
+        display: none;
+    }
+    .img-content-mobile{
+        display: block; 
+        width: 100%;
+        height: 100%;
+    }
+    .img-content-deskopt{
+        display: none;
+        
+    }
+    
+    
+    .section2{
+        height: 1755px;
+    }
+    .card-container{
+        height: 1695px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 0px;
+    }
+    
+    .card{
+        width: 343px;
+        height: 259px;
+        border-radius: 10px;
+    }
+    .card-secundario {
+        padding-left: 28px;
+    }
+    .title-card {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .content-card {
+        font-size: 16px;
+        line-height: 26px; 
+        margin-top: 16px;
+        height: 78px;
+    }
+    
+    .card_principal {
+        background: var(--gradient1);
+        width: 343px;
+        height: 120px;
+    }
+    .title-card-principal{
+       
+        font-size: 24px;
+        line-height: 32px;
+        width: 286px;
+        margin-top: 24px;
+        margin-left: 28px;
+    }
+    .footer{
+        display: flex;
+        width: 343px;
+        height: 56px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .img-logo-footer {
+        width: 89px;
+        height: 24px;
+    }
+    .btn-footer{
+        width: 140px;
+        height: 48px;
+        font-size: 16px;
+    }
+}
